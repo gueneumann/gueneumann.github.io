@@ -1,3 +1,3 @@
 # gueneumann.github.io
 
-This is my personal wbe site.
+This is my personal Web Site.
