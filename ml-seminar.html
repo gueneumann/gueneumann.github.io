@@ -1,0 +1,485 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Generator" content="Microsoft Word 97">
+   <meta name="GENERATOR" content="Mozilla/4.77 [en] (Windows NT 5.0; U) [Netscape]">
+   <title>Maschinelle Lernverfahren f&uuml;r Informationsextraktion und Text Mining</title>
+</head>
+<body text="#000000" bgcolor="#CCFFFF" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+
+<center><b><font size=+2>Maschinelle Lernverfahren f&uuml;r Informationsextraktion
+und Text Mining</font></b>
+<br><b><i><font color="#C0C0C0">(Machine Learning Methods for Information
+Extraction and Text Mining)</font></i></b>
+<p><b><font color="#000000"><font size=+1>Hauptseminar im Sommersemester
+2001</font></font></b>
+<p>Leitung: Dr. <a href="http://www.dfki.de/~neumann">G&uuml;nter Neumann
+</a>,
+Dipl.-Ling. <a href="http://www.dfki.de/~feiyu">Feiyu Xu, </a>Dipl.-Inform.
+Jakub Piskorski
+<br>Ort: Geb. 17.2, Konferenzraum 2.11
+<br>Zeit: Mittwoch 14-16 Uhr
+<br>Beginn: 18.04.2001</center>
+
+<p><b><font size=+2>Inhalt</font></b>
+<p><font color="#000099">Bei der Informationsextraktion und dem Text Mining
+geht es um das Aufsp&uuml;ren und Strukturieren relevanter Informationseinheiten
+aus einer Menge von unstrukturierten oder semi-strukturierten Texten. Wichtige
+Teilbereiche hierbei sind z.B. Extraktion von <i>Termen und Ontologien</i>,
+<i>Topic
+Detection</i>, <i>Named Entity Erkennung</i>, <i>Extraktion von Templates
+</i>und
+<i>Klassifikation von Dokumenten</i>. In den letzten Jahren werden in diesen
+verschiedenen Teilbereichen verst&auml;rkt, maschinelle Lernverfahren entwickelt,
+um eine m&ouml;glichst automatische Anpassung der Basistechnologien an
+neue Anwendungen und Wissensbereiche zu erreichen.</font>
+<br><font color="#000099">Das Seminar f&auml;ngt mit einer kurzen Einf&uuml;rung
+in die Gebiete Informationsextraktion und Text Mining an, die auch eine
+Abgrenzung zu verwandten Themen wie z.B. <i>Information Retrieval </i>and
+<i>Question
+Answering Systems </i>umfasst. Das Ziel dieses Seminars ist es dann, verschiedene
+aktuelle maschinelle Lernverfahren f&uuml;r Informationsextraktion und
+Text Mining zu diskutieren und zu vergleichen.</font>
+<br><b><i><font color="#666666">(Information extraction and text mining
+is concerned with the detection and normalization of relevant information
+from a set of unstructured or semi-structured NL texts. Important subtasks
+are here, e.g., the extraction of terms and ontologies, topic detection,
+named entity recognition, extraction of templates and text categorization.
+In recent years more and more approaches based on Machine Learning are
+used in order to achieve a high degree of automatic adaptation towards
+new application and knowledge areas.</font></i></b>
+<br><b><i><font color="#666666">This seminar starts with a short introduction
+into the fields of information extraction and text mining, and a brief
+comparision with other research areas like information retrieval and question
+answering systems. The main objective is then, to discuss and compare the
+different learning approaches currently developed in information extraction
+and text mining.)</font></i></b>
+<br>&nbsp;
+<p><b><font size=+2>Literatur</font></b>
+<br>&nbsp;
+<p><b><font color="#000099">Einige kompakte Einf&uuml;hrungen zum Thema
+Informationsextraktion und Text Mining finden sich in:</font></b>
+<br><b><i><font color="#999999">(Compact introductions to the themes can
+be find here:)</font></i></b>
+<ul>
+<li>
+G. Neumann: <a href="http://www.dfki.de/~neumann/publications/new-ps/ie.pdf">Informationsextraktion.
+</a>In
+Klabunde et al (eds): Computerlinguistik und Sprachtechnologie - Eine Einf&uuml;hrung.
+Spektrum Akademischer Verlag, Heidelberg (Buch erscheint Ende 2001)</li>
+
+<li>
+Douglas Appelt: <a href="http://www.ai.sri.com/~appelt/ie-tutorial/IJCAI99.pdf">Introduction
+to Information Extraction Technology</a></li>
+
+<li>
+Marti A. Hearst: <a href="http://www.sims.berkeley.edu/~hearst/talks/dm-talk/sld001.htm">Text
+Data Mining, Issues, Techniques, and Relation to Information Access</a></li>
+</ul>
+<b><font color="#000099">Einf&uuml;hrungsvortr&auml;ge</font></b>
+<br><b><i><font color="#999999">(Introductions)</font></i></b>
+<ul>
+<li>
+<b>18. April&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i><a href="http://www.dfki.de/~neumann/courses/intro-ie.htm">&Uuml;berblick
+in Informationsextraktion</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </i>G&uuml;nter
+Neumann</b></li>
+
+<li>
+<b>25. April&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>&Uuml;berblick in Textmining
+</i><a href="http://www.dfki.de/~feiyu/HS-TM-IE/textM.ppt">[.ppt]</a><a href="http://www.dfki.de/~feiyu/HS-TM-IE/textM.htm">[.htm]</a><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+</i>Jakub Piskorski und Feiyu Xu</b></li>
+</ul>
+<b><font color="#000099">Themenliste und Zeitplan</font></b>
+<br><b><i><font color="#666666">(List of theme and time schedule)</font></i></b>
+<ul>
+<li>
+<b>2. Mai&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>Wissensbasierte
+IE-Systeme: FASTUS, GATE, DFKI-SMES-Technologien</i></b></li>
+
+<ul>
+<ul>
+<ul>
+<li>
+<b><i>&nbsp;&nbsp;&nbsp; </i><font color="#FF6666">Vortr&auml;ge von Neumann<a href="http://www.dfki.de/~feiyu/HS-TM-IE/soccer.ppt">[.ppt]</a><a href="http://www.dfki.de/~feiyu/HS-TM-IE/soccer.htm">[.htm]</a>,
+Piskorski <a href="http://www.dfki.de/~feiyu/HS-TM-IE/sppc_extended.ppt">[.ppt]
+</a><a href="http://www.dfki.de/~feiyu/HS-TM-IE/sppc_extended.htm">[.htm]</a>
+und Xu <a href="http://www.dfki.de/~feiyu/HS-TM-IE/FaGate.ppt">[.ppt]</a><a href="http://www.dfki.de/~feiyu/HS-TM-IE/FaGate.htm">[.htm]</a></font></b></li>
+
+<li>
+<b>&nbsp;&nbsp;&nbsp;&nbsp; <font color="#006600">Literatur</font></b></li>
+
+<menu>
+<li>
+<b><font color="#006600">Homepage of <a href="http://www.ai.sri.com/~appelt/fastus.html">FASTUS</a></font></b></li>
+
+<li>
+<b><font color="#006600">Hobbs, Appelt, Bear, Israel, Kameyama, Stickel
+and Tyson, <a href="http://www.ai.sri.com/~appelt/fastus-schabes.html">FASTUS:
+A Cascaded Finite-State Transducer for Extracting Information from Natural-Language
+Text</a>, in Roche and Schabes, eds., Finite State Devices for Natural
+Language Processing, MIT Press, Cambridge MA, 1996.</font></b></li>
+
+<li>
+<b><font color="#006600">Homepages of <a href="http://www.dcs.shef.ac.uk/research/groups/nlp/gate/">Gate</a></font></b></li>
+
+<li>
+<b><font color="#006600"><a href="http://www.gate.ac.uk/gate/doc/papers.html">Publications
+of Gate</a></font></b></li>
+
+<br><b><font color="#006600"><a href="http://www.dfki.uni-sb.de/~neumann/publications/neumann-ref.html">DFKI-SMES-Technologien</a></font></b>
+<ol>
+<ol>
+<li>
+<b><font color="#006600">G. Neumann, R. Backofen, J. Baur, M. Becker, C.
+Braun: An Information Extraction Core System for Real World German Text
+Processing. In proceedings of ANLP-1997, Washington, DC, pages 209-216</font></b></li>
+
+<li>
+<b><font color="#006600">J. Piskorski and G. Neumann: An Intelligent Text
+Extraction and Navigation System In proceedings of 6th International Conference
+on Computer-Assisted Information Retrieval (RIAO-2000), Paris, 2000</font></b></li>
+
+<li>
+<b><font color="#006600">G. Neumann, C. Braun and J. Piskorski: A Divide-and-Conquer
+Strategy for Shallow Parsing of German Free Texts In proceedings of ANLP-2000,
+Seattle, Washington, pages 239-246</font></b></li>
+
+<li>
+<b><font color="#006600">G. Neumann and J. Piskorski: A Shallow Text Processing
+Core Engine. Under review by the Journal of Computational Intelligence.</font></b></li>
+</ol>
+</ol>
+</menu>
+</ul>
+</ul>
+</ul>
+
+<li>
+<b>9. Mai&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>Template Merging</i></b></li>
+
+<ul>
+<ul>
+<menu>
+<li>
+<b><font color="#FF0000">Vortrag von Tatjana Scheffler <a href="http://www.dfki.de/~neumann/ml-themes/template-merging.ps.gz">[.ps.gz]</a></font></b></li>
+
+<li>
+<b>&nbsp;<font color="#006600">Literatur</font></b></li>
+
+<menu>
+<li>
+<b><font color="#006600">Homepage of <a href="http://www.ai.sri.com/~appelt/fastus.html">FASTUS</a></font></b></li>
+
+<li>
+<b><font color="#006600">Hobbs, Appelt, Bear, Israel, Kameyama, Stickel
+and Tyson, <a href="http://www.ai.sri.com/~appelt/fastus-schabes.html">FASTUS:
+A Cascaded Finite-State Transducer for Extracting Information from Natural-Language
+Text</a>, in Roche and Schabes, eds., Finite State Devices for Natural
+Language Processing, MIT Press, Cambridge MA, 1996.</font></b></li>
+
+<li>
+<b><font color="#006600">Douglas Appelt: <a href="http://www.ai.sri.com/~appelt/ie-tutorial/IJCAI99.pdf">Introduction
+to Information Extraction Technology</a></font></b></li>
+
+<li>
+<b><font color="#006600">Andrew Kehler:&nbsp; <a href="http://ling.ucsd.edu/~kehler/Papers/MLDP.ps.gz">Learning
+Embedded Discourse Mechanisms for Information Extraction</a>,</font></b></li>
+
+<br><b><font color="#006600">in the Proceedings of the AAAI Spring Symposium
+on Applying Machine Learning to</font></b>
+<br><b><font color="#006600">Discourse Processing, Stanford, CA, March
+1998.</font></b></menu>
+</menu>
+</ul>
+</ul>
+
+<li>
+<b>16. Mai&nbsp;&nbsp;&nbsp;&nbsp; <i>Induktive Lernverfahren: Supervised/Unsupervised
+Template Learning</i></b></li>
+
+<ul>
+<ul>
+<ul>
+<li>
+<b><font color="#006600">Literatur</font></b></li>
+
+<menu>
+<li>
+<b><font color="#006600">Ion Muslea: <a href="http://www.isi.edu/~muslea/PS/ml4ie-aaai99.ps">Extraction
+Patterns for Information Extractionn Tasks: A Survey</a></font></b></li>
+
+<li>
+<b><font color="#006600"><a href="http://www.cs.utah.edu/~riloff/pubs.html">Riloff's
+Publication Page of Information Extraction</a></font></b></li>
+
+<li>
+<b><font color="#006600"><a href="http://cs1.cs.nyu.edu/roman/">Roman Yangarber's
+Publication Page (only papers in 2000)</a></font></b></li>
+</menu>
+</ul>
+</ul>
+</ul>
+
+<li>
+<b>23. Mai&nbsp;&nbsp;&nbsp; <i>Named Entity Recognition (Decision trees,
+HMMs, Maximum Entropy Modeling)</i></b></li>
+
+<ul>
+<ul>
+<ul>
+<li>
+<b><font color="#FF0000">Vortrag von Stephan Lesch<a href="http://www.dfki.de/~feiyu/HS-TM-IE/ner2.ppt">[.ppt]</a><a href="http://www.dfki.de/~feiyu/HS-TM-IE/ner2.htm">[.htm]</a></font></b></li>
+
+<li>
+<b><font color="#006600">Literatur</font></b></li>
+
+<ul>
+<li>
+<b><font color="#006600">A. Gallippi, Learning to Recognize Names Across
+Languages. In Proceedings of the Sixteenth International Conference on
+Computational Linguistics. Copenhagen, Denmark. August, 1996</font></b></li>
+
+<li>
+<b><font color="#006600">Bikel, Miller, Schwartz and Weischedel, Nymble:
+a High-Performance Learning Name-finder,In proceedings of ANLP-1997, Washington,
+DC, pages 195-201</font></b></li>
+
+<li>
+<b><font color="#006600">A. Borthwick, <a href="http://www.choicemaker.com/borthwick.htm">A
+Maximum Entropy Approach to Named Entity Recognition</a>, Ph.D. (1999)&nbsp;
+New York University.&nbsp; Department of Computer Science, Courant Institute.</font></b></li>
+</ul>
+</ul>
+</ul>
+</ul>
+</ul>
+
+<ul>
+<li>
+<b>30. Mai&nbsp;&nbsp;&nbsp; <i>Information</i> <i>Wrapping --- Lernen
+aus Semi-Strukturierten Dokumenten</i></b></li>
+
+<ul>
+<ul>
+<ul>
+<li>
+<b><font color="#FF0000">Vortrag von Ulf Knoblich [<a href="http://www.dfki.de/~feiyu/HS-TM-IE/wrapping.ps.gz">.ps.gz</a>]</font></b></li>
+
+<li>
+<b><font color="#006600">Literatur</font></b></li>
+
+<ul>
+<li>
+<b><font color="#006600">D. Freitag, <a href="http://www.cs.cmu.edu/afs/cs/user/dayne/www/cv.html#publications">Information
+extraction from HTML</a>: application of a general machine learning approach,
+In Proceedings of AAAI-98</font></b></li>
+
+<li>
+<b><font color="#006600">D. Freitag and N. Kushmerick, <a href="http://www.cs.cmu.edu/afs/cs/user/dayne/www/cv.html#publications">Boosted
+wrapper induction</a>, In Proceedings of AAAI-2000.</font></b></li>
+
+<li>
+<b><font color="#006600">Hsin-Hsi Chen, Shih-Chung Tsai, Jin-He Tsai, Mining
+Tables from Large Scale HTML Texts, In Proceedings of Coling 2000, Saarbr&uuml;cken,
+Germany, 2000.</font></b></li>
+</ul>
+</ul>
+</ul>
+</ul>
+
+<li>
+<b>6. Juni&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>Classification</i></b></li>
+
+<ul>
+<ul>
+<ul>
+<li>
+<b><font color="#FF0000">Vortrag von Sven Schmeier. [<a href="http://www.dfki.de/~feiyu/HS-TM-IE/Sven_class.ppt">.ppt]</a>
+[<a href="http://www.dfki.de/~feiyu/HS-TM-IE/Sven_class.htm">.htm</a>][<a href="http://www.schmeier.de/MachineLearning/">animation</a>]</font></b></li>
+
+<li>
+<b><font color="#006600">Literatur</font></b></li>
+
+<ul>
+<li>
+<b><font color="#006600"><a href="http://www.cs.cmu.edu/~yiming/publications.html">Yiming
+Yang's Publication Page</a></font></b></li>
+
+<ul>
+<li>
+<b><font color="#006600">Yiming Yang and Xin Liu A re-examination of text
+categorization methods. Proceedings of ACM SIGIR Conference on Research
+and Development in Information Retrieval (SIGIR), 1999, pp 42--49.</font></b></li>
+</ul>
+
+<ul>
+<li>
+<b><font color="#006600">Yiming Yang An Evaluation of statistical approaches
+to text categorization. Journal of Information Retrieval, 1999, Vol 1,
+No. 1/2, pp 67--88.</font></b></li>
+</ul>
+
+<li>
+<b><font color="#006600"><a href="http://ais.gmd.de/~thorsten/svm_light/">Support
+Vector Machine</a></font></b></li>
+
+<li>
+<b><font color="#006600">G. Neumann and S. Schmeier: <a href="http://www.dfki.de/~neumann/publications/new-ps/ijcai99-ws.pdf">Combining
+Shallow Text Processing and Machine Learning in Real World Applications&nbsp;</a>
+In Proceedings of the IJCAI-99 workshop on Machine Learning for Information
+Filtering, Stockholm, Sweden, 1999</font></b>.</li>
+</ul>
+</ul>
+</ul>
+</ul>
+</ul>
+
+<ul>
+<li>
+<b>13. Juni&nbsp;&nbsp;&nbsp; <i><font color="#000000">Clustering</font></i></b></li>
+
+<ul>
+<ul>
+<ul>
+<li>
+<b><i>&nbsp; </i><font color="#006600">Literatur</font></b></li>
+
+<ul>
+<li>
+<b><font color="#006600"><a href="http://citeseer.nj.nec.com/301272.html">A
+Comparison of Document Clustering Techniques</a>. Michael Steinbach,</font></b></li>
+
+<br><b><font color="#006600">George Karypis and Vipin Kumar</font></b>
+<li>
+<b><font color="#006600"><a href="http://ai.iit.nrc.ca/DEIL/abstracts.html">Clustering
+Full Text Documents</a>, Joel D. Martin, Workshop on Data Engineering for
+Inductive Learning IJCAI-95, Montreal (Canada), August 20, 1995</font></b></li>
+
+<li>
+<b><font color="#006600"><a href="http://citeseer.nj.nec.com/302891.html">Lightweight
+Document Clustering</a>, Sholom Weiss, Brian White, Chid Apte</font></b></li>
+
+<li>
+<b><font color="#006600">Zamir O., Etzioni O.: <a href="http://citeseer.nj.nec.com/zamir98web.html">Web
+Document Clustering: A Feasibility Demonstration.</a> In:</font></b></li>
+
+<br><b><font color="#006600">SIGIR'98, Melbourne, Australia.</font></b>
+<li>
+<b><font color="#006600"><a href="http://dewey.yonsei.ac.kr/memexlee/links/clustering.htm">http://dewey.yonsei.ac.kr/memexlee/links/clustering.htm</a></font></b></li>
+</ul>
+</ul>
+</ul>
+</ul>
+
+<li>
+<b>20. Juni&nbsp;&nbsp;&nbsp; <i>Topic detection</i></b></li>
+
+<ul>
+<ul>
+<ul>
+<li>
+<b><font color="#FF0000">Vortrag von Johanna Voelker [<a href="http://www.dfki.de/~neumann/ml-themes/Topic.ppt">.ppt</a>]</font></b></li>
+
+<li>
+<b><i>&nbsp;&nbsp; </i><font color="#006600">Literatur</font></b></li>
+
+<ul>
+<li>
+<b><font color="#006600"><a href="http://www.ldc.upenn.edu/TDT/">Topic
+Detection and Tracking (TDT)</a></font></b></li>
+
+<li>
+<b><font color="#006600"><a href="http://www.ri.cmu.edu/people/seymore_kristie.html">K.
+Seymore</a> and R. Rosenfeld,&nbsp; <a href="http://www.ri.cmu.edu/pubs/pub_862.html">Large-scale
+Topic Detection and Language Model Adaptation.</a></font></b></li>
+
+<br><b><font color="#006600">&nbsp;Tech. report CMU-CS-97-152, Computer
+Science Department, Carnegie Mellon University, June, 1997.</font></b>
+<li>
+<b><font color="#006600">Yiming Yang, Jaime Carbonell, Ralf Brown, Thom
+Pierce, Brian T. Archibald, Xin Liu, <a href="http://www.cs.cmu.edu/~yiming/publications.html">Learning
+Approaches for Detecting and Tracking News Events (pdf.gz)</a>. IEEE Intelligent
+Systems: Special Issue on Applications of Intelligent Information Retrieval,Vol.
+14(4), pp32-43, July/August 1999.</font></b></li>
+
+<li>
+<b><font color="#006600">Allan, J., Carbonell, J.G., Doddington, G., Yamron,
+J. and Yang Y.,&nbsp; <a href="http://www.cs.cmu.edu/~yiming/publications.html">Topic
+Detection and Tracking Pilot Study</a>&nbsp; Final Report, Proceedings
+of the Broadcast News Transcription and Understranding Workshop (Sponsored
+by DARPA), Feb. 1998.</font></b></li>
+
+<li>
+<b><font color="#006600">&nbsp;L. A. Mather, J. Note: <a href="http://www.cs.cmu.edu/~dunja/WshKDD2000.html">Discovering
+Encyclopedic Structure and Topics in Text</a></font></b></li>
+
+<br><b><font color="#006600">KDD-2000 Workshop on Text Mining</font></b></ul>
+</ul>
+</ul>
+</ul>
+
+<li>
+<b>27. Juni&nbsp;&nbsp;&nbsp; <i>Extraktion und Induktion von Ontologien
+und Lexikalisch Semantischen Relationen</i></b></li>
+
+<ul>
+<ul>
+<ul>
+<li>
+<b><font color="#FF0000">Vortrag von Claudia Crispi [<a href="http://www.dfki.de/~neumann/ml-themes/Ontologie.ppt">.ppt</a>]</font></b></li>
+
+<li>
+<b><font color="#006600">&nbsp;Literatur</font></b></li>
+
+<ul>
+<li>
+<b><font color="#006600">CMU World Wide Knowledge Base (Web->KB) project,&nbsp;
+CS Department, Carnegie Mellon University, Pittsburgh</font></b></li>
+
+<ul>
+<li>
+<b><font color="#006600">&nbsp;M. Craven, D. DiPasquo, D. Freitag, A. McCallum,
+T. Mitchell, K. Nigam and S. Slattery<a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/project/theo-11/www/wwkb/">.
+Learning to Extract Symbolic Knowledge from the World Wide Web</a>, Proceedings
+of the 15th National Conference on Artificial Intelligence (AAAI-98).</font></b></li>
+</ul>
+
+<li>
+<b><font color="#006600">Finkelstein-Landau and Morin, Extracting Semantic
+Relationships between Terms: Supervised vs. Unsupervised Methods. In Actes,
+International Workshop on Ontological Engineering on the Global Information
+Infrastructure, pages 71-80, Dagstuhl Castle, Germany, 1999.</font></b></li>
+
+<li>
+<b><font color="#006600">A. Maedche and S. Staab. <a href="http://www.aifb.uni-karlsruhe.de/~sst/Research/Publications/Publications.htm">Discovering
+Conceptual Relations from Text.</a> In Proceedings of the 14th European
+Conference on Artificial Intelligence, Berlin, August 21-25, 2000.</font></b></li>
+</ul>
+</ul>
+</ul>
+</ul>
+
+<li>
+<b>4. Juli&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>Chinese Information Extraction</i></b></li>
+
+<ul>
+<ul>
+<li>
+<b><font color="#FF0000">Gastvortrag von Prof. Yao von der Shanghai Jiao
+Tong Universit&auml;t [<a href="http://www.dfki.de/~neumann/ml-themes/CN_IE.ppt">.ppt</a>]</font></b></li>
+</ul>
+</ul>
+</ul>
+<b><font size=+1>Voraussetzungen/Bemerkungen</font></b>
+<br>Einf&uuml;hrung Informatik und Computerlinguistik, Grundkenntnisse
+in formalen Sprachen (insbesondere Automatentheorie) und Logik,
+<br>Programmiererfahrung.
+<p><b><font size=+1>Scheine</font></b>
+<br>Vortrag und Hausarbeit
+<br>________________________________________________________________________________________
+<p>E-mail: neumann@dfki.de
+<p>Last modified: 5. July. 2001
+</body>
+</html>

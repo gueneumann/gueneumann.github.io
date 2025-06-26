@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>G&uuml;nter Neumann's resources web page</title>
+	<link rel="stylesheet" media="screen,projection"  title="GN home page style"
+	href="styles.css" type="text/css" />
+</head>
+
+<body>
+	<div id="wrapper">
+		
+		<div id="sitename">
+			<h1><a href="index.html" title="guenter neumann home page">g&uuml;nter neumann</a></h1>
+		</div>
+		
+		<div id="header">
+			<!-- Header so ändern, dass links Bild mit meinem Namen und rechts DFKI und LT-lab erscheinen-->
+			<table>
+				<colgroup>
+				<col width="30%" />
+				<col width="60%" />
+				<col width="10%" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<td> <img src="images/2.jpg" width="115" height="168" alt="Image of G&uuml;nter Neumann"/></td>
+						<td><h2>German Research Center for Artificial Intelligence</h2></td>
+						<td><img src="images/logo2.jpg" alt="Image of DFKI logo"/></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		<div id="body" class="clear">
+			
+			<div id="sidebar" class="column-left">
+				<!-- Sidebar nun so ändern, dass hier die verschiedenen links aufgelistet werden und auf die entsprechenden Websites zeigen,
+				wobei ich bei jedem item den body text ändern muss und auch die link adressen-->
+				<ul>	
+					<li>
+						<h4>Navigate</h4>
+						<ul>
+							<li><a href="index.html" title="guenter neumann home page">Home</a></li>
+							<li><a href="contact.html" title="guenter neumann contact information">Contact</a></li>
+							<li><a href="publications-selected.html" title="guenter neumann publication page">Publications</a></li>
+							<li><a href="courses.html" title="courses web pages">Courses</a></li>
+							<li><a href="GN_CV.pdf" title="Curriculum Vitae">Curriculum Vitae</a></li>
+							<li><a href="talks.html" title="presentations">Selected Presentations</a></li>
+							<li><a href="projects.html" title="projects">Projects</a></li>
+							<li><a href="resources.html" title="resources">Resources</a></li>
+							<li><a href="memberships.html" title="scientific memberships">Memberships</a></li>
+							<li><a href="partner.html" title="cooperation">Partners</a></li>
+							<li><a href="oldnews.html" title="oldnews">Old News</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+				<h4>Hello!</h4>
+				<p>I am listing here links to different kinds of resources that have been created by myself and my students. These resources cover software packages, online access to systems or data sources.
+					<br>
+					For more resources, see also my <strong>ghithub page</strong> at 
+					<a href="https://github.com/gueneumann" title="gueneumann · GitHub">https://github.com/gueneumann</a>.
+				</p>
+			</div>
+			
+			<div id="content" class="column-right">
+				
+				<div id="teachingMaterial">
+					<h3>Textual Inference</h3><a name="TI"></a>
+					<h4 id="">Excitement Open Platform</h4>
+					<p>
+						The <a href="http://hltfbk.github.io/Excitement-Open-Platform/" title="Excitement-open-platform by hltfbk">EXCITEMENT Open Platform (EOP)</a> is an open source software platform containing state-of-the-art algorithms for recognizing texual entailment relations:
+
+						<p>given two text fragments, one named text and the other named hypothesis, the task consists in recognizing whether the hypothesis can be inferred from the text.</p>
+
+						<p>Written in Java, EOP is a main product of the project <a href="https://sites.google.com/site/excitementproject/" title="EXCITEMENT: EXploring Customer Interactions through Textual EntailMENT">EXCITEMENT - EXploring Customer Interactions through Textual EntailMENT</a> which is funded by the European Commission under the European Union's Seventh Framework Programme (FP7). EOP is designed to be efficient and extendable. Highlights include:
+							<ul>
+								<li>Separation between Linguistic Analysis Pipelines and Entailment Components</li>
+						    <li>Supporting modularity and interoperability among Components</li>
+						    <li>Java API with source code</li>
+						    <li>Pre-trained multi-lingual models (i.e. English, German, Italian)</li>
+						    <li>Trainable with new sample data</li>
+						    <li>Detailed documentation to understand the structure and implementation of EOP</li>
+						    <li>Quick Start documentation to start using EOP from now</li>
+						    <li>Results and configuration files archive shared among users</li>
+						</ul>						
+					</p>
+					
+					<h4 id="">TIE - Textual Inference Engine</h4>
+					<p>As part of the EOP platform, we have developed TIE, which is a lightweight tool for recognizing textual entailment based on the Maximum Entropy Modeling framework.. For details of TIE check this <a href="https://github.com/hltfbk/EOP-1.1.3/wiki/MaxEntClassificationEDA">link</a>, and <a href="https://github.com/hltfbk/EOP-1.1.3/wiki/MaxEntClassificationEDA">this</a>.
+					</p>
+					
+					
+					<h3>Question answering</h3><a name="QA"></a>
+					<h4 id="">The QALL-ME framework</h4>
+					<p>The QALL-ME framework is a free Service Oriented Architecture (SOA) skeleton for mutlilingual QA systems. The public project deliverable <a href="publications/new-ps/QALL-ME_D2.1_20070505.pdf">The QALL-ME Architecture Design Issues and QA Framework</a> (Neumann et al. 2007) describes the principles of the multilingual open-domain Question Answering framework as well as some future directions. More information about technical details, online demonstration, and download links can be find <a href="http://qallme.sourceforge.net/" title="The QALL-ME Framework">here</a>.</p>
+					
+					<h4 id="">Web-based Question answering system</h4><a name="WebQA2"></a>
+					<p>An experimental web-based question answering system, that answers factoid and definition questions in several languages from Textsnippets returned by standard search engines, as described in <a href="publications.html#FactQA">(Figueroa and Neumann, 2006)</a>  and <a href="publications.html#DefQA">(Figueroa et al., 2009)</a>.
+					</p>
+					
+					<h4 id="">Cross-lingual open domain question answering</h4>
+					<p>Quantico is a cross-lingual open-domain question answering system that can receive German questions and extracts exact answers from German or English documents either fetched from a local document collection or from the Web, cf. <a href="publications.html#Quantico2006">(Neumann and Sacaleanu, 2006)</a>  and <a href="publications.html#Quantico2007">(Sacaleanu and Neumann, 2007)</a>.</p>
+					
+					
+					<h3>Information extraction</h3><a name="IE"></a>
+					
+					
+					<h4 id="">Information Extraction from Scientific Publications<a name="WebDILIA"></a></h4>
+					<p>In the project <a href="projects.html#DILIA">Dilia</a> we have developed unsupervised methods for the extraction of technical terms, Named Entities and relations from the full text of scientific articles published in the journal <a href="http://www.znaturforsch.com/" title="Verlag der Zeitschrift f&uuml;r Naturforschung">Zeitschrift f&uuml;r Naturforschung</a>.
+					</p>
+					
+					
+					<h4 id="">German text processing</h4>
+					<p>SMES is a is an information extraction core system for real world German text processing. 
+						It provides a set of basic powerful, robust, and efficient
+						natural language components and generic linguistic knowledge sources which can easily be customized for
+						processing different tasks in a  flexible manner, cf. <a href="publications.html#Smes1">(Neumann et al., 1997)</a>, <a href="publications.html#Smes2">(Neumann et al., 2000)</a>.
+					</p>
+					
+					<h4 id="">German Named entity recognition and chunk parsing</h4>
+					
+					<p>Parts of SMES have also been realized as a standalone system called STP that recognizes named entities, online noun compounds and syntactic chunks by applying a cascade of finite state machines very efficiently, cf. <a href="publications.html#SPPC">(Neumann and Piskorski, 2002)</a>. This version is implemented in C++ and runs on Windows, Linux and MacOs. Please, contact me if you want more information about this version of SMES.</p>
+					
+					
+					<h3>Multilingual Dependency Parsing</h3><a name="MDParser"></a>
+					<p>MDParser is a very fast data-driven multilingual dependency parser developed by my student Alexander Volokh. MDParser is an especially fast system and therefore it is particularly suitable for processing very large amounts of data. Currently, we are using it in our research systems for recognizing textual entailment (RTE); for more details see <a href="http://www.dfki.de/~neumann/publications/new-ps/TAC2010-DFKI.proceedings.pdf" title="">(Volokh and Neumann, 2011)</a> and <a href="http://www.dfki.de/~neumann/publications/new-ps/treebankErrors.pdf" title="">(Volokh et al., 2010)</a>.
+					</p>
+					
+					<h3>Morphology</h3>
+					<h4>Morphix</h4>
+					<p>Morphix is a very fast and robust morphological component for German. Besides inflectional analysis, it analyses compounds and is also able to generate wordforms from a given stem entry and some further (optional) morpho-syntactic information.
+					</p> 
+					
+					<h3>Data</h3>
+					<h4>Recognizing Textual Entailment</h4><a name="German-RTE3-Data"></a>
+					<p>We have manually translated the <a href="http://pascallin.ecs.soton.ac.uk/Challenges/RTE3/Datasets/" title="Third Recognising Textual Entailment Challenge">English RTE-3 data set</a> to German. The complete data set (800 pairs for development and 800 pairs for testing) can be downloaded form <a href="resources/RTE3_DE_V1.2_2013-12-02.zip">here</a>. <em>Note: This zip file is from 2nd December 2013 and contains an updated pair (id 215) in the development set!</em> <strong>If you are using the data, please cite this link</strong>.
+					</p>
+					<h4>Customer Interaction Data of German Emails and Online Requests</h4><a name="Public-CIA-Data"></a>
+					<p>We provide a public dataset of set of German emails and online requests from customers to the support center of a multimedia software company. A description of the dataset as well as a download link can be found <a href="resources/omqdata.html">here</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer" class="clear">
+			<p class="left">&copy; 
+				<script type="text/javascript">
+					var today = new Date()
+					var year = today.getFullYear()
+					document.write(year)
+				</script>
+			G&uuml;nter Neumann</p>
+			<p class="right">
+				<a href="https://www.dfki.de/web/data-protection-en">Data Protection</a>
+				<a href="https://www.dfki.de/web/legal-info-en">Legal Information</a>
+			</p>
+		</div>
+	
+	</div>
+</body>
+
+</html>
